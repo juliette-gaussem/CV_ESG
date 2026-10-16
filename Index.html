@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Juliette Gaussem CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Source+Serif+4:ital,wght@0,600;1,400&display=swap">
+<style>
+:root{
+  --paper:#F5F7FA; --surface:#FFFFFF; --ink:#16213A; --ink2:#4A566B; --line:#D6DCE6; --accent:#1F6F8B; --accent-ink:#17576D;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif; --sans:"IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+  color-scheme: light;
+}
+:root[data-theme="dark"]{ --paper:#0F1623; --surface:#161F2E; --ink:#E7EBF2; --ink2:#A7B1C2; --line:#2B3648; --accent:#6CB8D2; --accent-ink:#8ACBE0; color-scheme: dark; }
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;hyphens:auto;-webkit-hyphens:auto;
+  padding-block:32px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--accent-ink);text-decoration:none;border-bottom:1px solid var(--line)}
+a:hover,a:focus-visible{border-bottom-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.sheet{max-width:1040px;margin:0 auto;background:var(--surface);border:1px solid var(--line);padding:clamp(24px,4vw,56px)}
+.top{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;flex-wrap:wrap}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4.5vw,44px);line-height:1.05;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.headline{font-family:var(--serif);font-size:clamp(17px,2vw,21px);color:var(--ink2);margin:8px 0 0;font-style:italic}
+.contact{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px 22px;color:var(--ink2);font-size:14px}
+.contact li{min-width:0}
+.toggle{border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:13px;padding:8px 12px;border-radius:999px;cursor:pointer;min-height:44px}
+.toggle[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.summary{margin:0;font-size:15.5px;text-align:justify}
+.lead{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px}
+.lead>*{min-width:0}
+@media (max-width:820px){.lead{grid-template-columns:1fr}}
+.lead h2{margin-top:0}
+.tail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 40px}
+.tail>*{min-width:0}
+@media (max-width:820px){.tail{grid-template-columns:1fr}}
+h2{font-family:var(--serif);font-weight:600;font-size:20px;margin:40px 0 14px;padding-bottom:6px;border-bottom:2px solid var(--ink)}
+h3{font-size:16px;margin:0;font-weight:600}
+.grid{display:grid;grid-template-columns:minmax(0,13fr) minmax(0,7fr);gap:0 40px}
+.grid>*{min-width:0}
+@media (max-width:820px){.grid{grid-template-columns:1fr}}
+/* Evidence ledger: the one bold element */
+.ledger{border-top:2px solid var(--ink);margin-top:14px}
+.ledger .row{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.ledger .row>*{min-width:0}
+.ledger .req{font-weight:600}
+.ledger .ev{color:var(--ink2);text-align:justify}
+.ledger .head{color:var(--ink2);font-size:13px;padding:8px 0}
+@media (max-width:560px){.ledger .row{grid-template-columns:1fr;gap:4px}}
+.role{padding:16px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.role:last-child{border-bottom:0}
+.role .meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--ink2);font-size:14px;margin:2px 0 8px}
+.role .meta time{font-variant-numeric:tabular-nums;white-space:nowrap}
+.role .org{font-weight:600;color:var(--ink)}
+.role .intro{margin:0 0 8px;color:var(--ink2);text-align:justify}
+ul.b{margin:0;padding-left:18px}
+ul.b li{margin:4px 0;text-align:justify}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{border:1px solid var(--line);padding:4px 9px;border-radius:4px;font-size:13.5px}
+.lead .chips{gap:6px}
+.plain{list-style:none;margin:0;padding:0}
+.plain li{padding:6px 0;border-bottom:1px solid var(--line)}
+.plain li:last-child{border-bottom:0}
+.plain .sub{color:var(--ink2);font-size:14px}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 16px}
+dt{font-weight:600}dd{margin:0;color:var(--ink2)}
+.foot{margin-top:40px;font-size:13px;color:var(--ink2)}
+@media (prefers-reduced-motion:no-preference){.toggle{transition:background .15s,color .15s}}
+@media print{
+  @page{size:A4;margin:9mm 11mm}
+  :root{--paper:#fff;--surface:#fff;--ink:#16213A;--ink2:#4A566B;--line:#D6DCE6;--accent:#1F6F8B;--accent-ink:#17576D}
+  body{padding:0;font-size:8.8pt;line-height:1.28}
+  .sheet{border:0;padding:0;max-width:none}
+  .toggle,.foot{display:none}
+  h1{font-size:24pt}.headline{font-size:12pt;margin-top:2pt}.contact{margin-top:6pt;font-size:9pt;gap:2pt 14pt}
+  .lead{margin-top:8pt;gap:5pt}.summary{font-size:9.4pt}.tail{gap:0 14pt}
+  h2{font-size:12pt;margin:9pt 0 4pt;padding-bottom:3pt;break-after:avoid}
+  h3{font-size:10.2pt}
+  .grid{display:flex;flex-direction:column-reverse}
+  .grid>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 16pt;margin-top:4pt}
+  .grid>div>section{break-inside:avoid}
+  .grid>section{break-before:page;column-count:2;column-gap:18pt}
+  .grid>section h2{column-span:all;margin-top:0}
+  .plain li{break-inside:avoid}
+  .ledger{margin-top:4pt}.ledger .row{padding:5pt 0;gap:10pt}.ledger .head{padding:3pt 0;font-size:8.5pt}
+  .role{padding:4pt 0;break-inside:avoid}.role .meta{margin:0 0 4pt;font-size:8.8pt}.role .intro{margin-bottom:4pt}
+  ul.b li{margin:2pt 0}
+  .chips li{padding:2pt 6pt;font-size:8.6pt}
+  .plain li{padding:3pt 0}.plain .sub{font-size:8.6pt}
+  a{border-bottom:0;color:inherit}
+}
+</style>
+</head>
+<body>
+<main class="sheet">
+  <header class="top">
+    <div>
+      <h1>Juliette Gaussem</h1>
+      <p class="headline">ESG strategy, reporting and risk leader</p>
+      <ul class="contact">
+        <li>Lisbon, Portugal</li><li><a href="tel:+351969279996">+351 9 6927 9996</a></li><li><a href="mailto:juliette.gaussem@gmail.com">juliette.gaussem@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/juliette-gaussem-99450535/" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <button class="toggle" id="themeBtn" type="button" aria-pressed="false">Dark mode</button>
+  </header>
+
+  <div class="lead">
+    <p class="summary">Environmental, Social and Governance (ESG) leader, working since 2010 across corporate, standard-setting and non-profit organisations. Group Head Sustainability at Netceed, where I chair the ESG Committee, have led the enterprise risk management process across all risk categories and am in charge of ESG relationships with private equity investors. Previously Head of ESG Reporting at Signify, a listed company, where I led the ESG reporting team, created the sustainability section of the annual report under reasonable assurance and advised on the EU regulatory landscape (EU Taxonomy, CSRD, CSDDD, ESPR). Earlier, from 2013 to 2018 at the Global Reporting Initiative, shaping corporate reporting practice. Fluent in English and French, intermediate Portuguese and Spanish.</p>
+    <section aria-labelledby="h-comp">
+      <h2 id="h-comp">Core competencies</h2>
+      <ul class="chips"><li>ESG risk governance</li><li>Enterprise risk management</li><li>ESG regulatory reporting (CSRD, EU Taxonomy, CSDDD, ESPR)</li><li>Sustainability strategy</li><li>Investor relations (private equity and institutional)</li><li>Supply chain due diligence</li><li>ESG ratings and data (CDP, DJSI, Sustainalytics, EcoVadis)</li><li>External assurance of ESG disclosures</li><li>Materiality assessment</li><li>Stakeholder engagement</li><li>Team leadership</li><li>Decarbonization planning</li><li>Life cycle assessment and eco-design</li><li>Business ethics and compliance</li></ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="h-ev">
+    <h2 id="h-ev">Evidence against the brief: ESG Risk Officer, Banco Finantia (Ref. PT/28/26)</h2>
+    <div class="ledger">
+      <div class="row head"><div>Requirement</div><div>Evidence from the record</div></div>
+      <div class="row"><div class="req">ESG regulatory disclosures, CSRD and EU Taxonomy</div><div class="ev">Annual report sustainability section under reasonable assurance at Signify; adviser on EU Taxonomy, CSRD, CSDDD, ESPR; compliance lead at Netceed</div></div><div class="row"><div class="req">ESG risk governance and policies</div><div class="ev">Chair of the ESG Committee; led the enterprise risk management process across all risk categories at Netceed</div></div><div class="row"><div class="req">Engagement with investors, auditors and boards</div><div class="ev">Quarterly reporting to PE investors and the Board of shareholders; institutional investor relations at Signify</div></div><div class="row"><div class="req">ESG data, metrics and providers</div><div class="ev">EcoVadis Gold and CDP disclosure at Netceed; led the ESG reporting that supported CDP A list, DJSI World Index, Sustainalytics top 1% and EcoVadis at Signify; LCA software rollout</div></div><div class="row"><div class="req">More than 10 years, Master&#x27;s in Management</div><div class="ev">Working since 2010; MSc Business and Management, NEOMA</div></div><div class="row"><div class="req">Cross-functional collaboration, international subsidiaries</div><div class="ev">Group-wide programs across business units at Netceed and Signify; GRI work across Europe and the Middle East</div></div><div class="row"><div class="req">English fluency, Spanish an advantage</div><div class="ev">English fluent, French native, Spanish and Portuguese intermediate</div></div>
+    </div>
+  </section>
+
+  <div class="grid">
+    <section aria-labelledby="h-exp">
+      <h2 id="h-exp">Professional experience</h2>
+      <article class="role">
+  <h3>Group Head Sustainability</h3>
+  <p class="meta"><span><span class="org">Netceed</span>, Lisbon, Portugal</span><time>Jan 2024 to present</time></p>
+  <p class="intro">Lead the global sustainability strategy and its operational planning, reporting to investors and the Board of shareholders.</p><ul class="b"><li>Chair the ESG Committee (ESG governance).</li><li>Led the enterprise risk management (ERM) process, covering all risk categories of the group.</li><li>In charge of ESG relationships with investors, mainly private equity: quarterly reporting to investors and the Board of shareholders, investor questionnaires and presentations.</li><li>Drive the group ESG programs: decarbonization plan; sustainable supply chain (due diligence and engagement with strategic suppliers); sustainable offer (LCA software and eco-design rules); DE&amp;I program; business ethics and compliance.</li><li>Ensure compliance with ESG regulations and reporting requirements; run ESG awareness, education and training.</li><li>Run the sustainability function with a team of 1 FTE plus external consultants; EcoVadis Gold rating and CDP disclosure.</li></ul>
+</article>
+<article class="role">
+  <h3>Head of ESG Reporting</h3>
+  <p class="meta"><span><span class="org">Signify</span>, Amsterdam, The Netherlands (remote from Portugal)</span><time>Nov 2018 to Dec 2023</time></p>
+  <p class="intro">Co-managed the development and execution of the company-wide sustainability program and led its reporting roadmap.</p><ul class="b"><li>Led the ESG reporting team; managed quarterly and annual ESG reporting and created the sustainability section of the annual report under reasonable assurance.</li><li>ESG lead for investor relations with institutional investors (listed company).</li><li>Strategic adviser on the new ESG regulatory landscape: EU Taxonomy, CSRD, CSDDD, ESPR.</li><li>Co-developed the sustainability program Brighter Lives, Better World 2025, with commitments to double the company&#x27;s positive impact on the environment and society.</li><li>Enabled top-performer recognition in key ESG ratings: CDP A list, DJSI World Index, Sustainalytics top 1%, EcoVadis; EU Taxonomy compliance.</li><li>Responsible for external sustainability communication and marketing content; led stakeholder engagement and materiality assessment.</li></ul>
+</article>
+<article class="role">
+  <h3>Head of Guidance and Practice</h3>
+  <p class="meta"><span><span class="org">GRI (Global Reporting Initiative)</span>, Amsterdam, The Netherlands</span><time>Sep 2017 to Oct 2018</time></p>
+  <p class="intro">Promoted to build a department developing knowledge assets that improve corporate sustainability reporting practice.</p><ul class="b"><li>Built and led a new department of 6 FTE; set and monitored GRI&#x27;s strategy for knowledge-based services.</li><li>Developed business plans and fundraising proposals; created and monitored the department budget and revenue.</li><li>Represented GRI on reporting topics, from introductory workshops to complex sustainability issues.</li></ul>
+</article>
+<article class="role">
+  <h3>Manager Corporate and Stakeholder Relations</h3>
+  <p class="meta"><span><span class="org">GRI (Global Reporting Initiative)</span>, Amsterdam, The Netherlands</span><time>Sep 2015 to Aug 2017</time></p>
+  <ul class="b"><li>Grew GRI&#x27;s international network of sustainability experts and Corporate Engagement revenues; developed country-specific corporate fundraising models.</li><li>Launched GRI local roundtables and the GRI Corporate Leadership Group on integrated reporting, in partnership with the IIRC.</li><li>Co-led the 2016 release of the G4 Standards engagement in France, the Netherlands and the Middle East.</li></ul>
+</article>
+<article class="role">
+  <h3>Senior Coordinator Corporate and Stakeholder Relations</h3>
+  <p class="meta"><span><span class="org">GRI (Global Reporting Initiative)</span>, Amsterdam, The Netherlands</span><time>Feb 2013 to Aug 2015</time></p>
+  <ul class="b"><li>Managed a portfolio of more than 100 organisations (multinationals, NGOs, SMEs, governmental organisations).</li><li>Led a community of practice for more than 40 corporate members in the Netherlands on the GRI guidelines.</li><li>Coordinated more than 50 membership events worldwide, including the GRI 4th Global Conference.</li></ul>
+</article>
+<article class="role">
+  <h3>Business Developer</h3>
+  <p class="meta"><span><span class="org">Groupe SOS</span>, Paris, France</span><time>Mar 2010 to Jan 2013</time></p>
+  <ul class="b"><li>Supported the CEO on the client portfolio and the recruitment of about 15 new clients per year; created client proposals and supported budgets of more than EUR 1M.</li><li>Managed partners and suppliers for sustainable events and communication strategies.</li></ul>
+</article>
+    </section>
+    <div>
+      <section aria-labelledby="h-edu">
+        <h2 id="h-edu">Education</h2>
+        <ul class="plain"><li><strong>MSc Business and Management</strong><br><span class="sub">NEOMA Business School, Reims, France, 2006 to 2010</span><br><span class="sub">Thesis: current issues for companies to consider citizen-consumer behaviour</span></li><li><strong>International Business Linkage Program</strong><br><span class="sub">Aalto University, Helsinki, Finland, 2009</span></li></ul>
+      </section>
+      <section aria-labelledby="h-cert">
+        <h2 id="h-cert">Certifications and training</h2>
+        <ul class="plain"><li>Investment Foundations, CFA</li><li>EDG Leader program, Hult International Business School</li><li>Women in Leadership, Erasmus University Rotterdam</li><li>Strategic Sales Skills, CIM</li></ul>
+      </section>
+      <section aria-labelledby="h-pub">
+        <h2 id="h-pub">Publications</h2>
+        <ul class="plain"><li><a href="https://www.signify.com/static/2021/signify-annual-report-2021.pdf" rel="noopener">Sustainability information, Signify Annual Report 2021</a></li><li><a href="https://www.globalreporting.org/search/?query=poverty" rel="noopener">GRI Discussion Paper: Corporate Reporting on Poverty, 2018</a></li><li><a href="https://www.globalreporting.org/search/?query=Forging+a+path+to+integrated+reporting" rel="noopener">Forging a path to integrated reporting: Insights from the GRI Corporate Leadership Group on integrated reporting, 2016</a></li></ul>
+      </section>
+      <section aria-labelledby="h-act">
+        <h2 id="h-act">Professional activities</h2>
+        <ul class="plain"><li><a href="https://www.hightechcampus.com/sustainablecampus" rel="noopener">Member, Eindhoven High Tech Campus Sustainability Board</a></li><li><a href="https://esgclearinghouse.org/" rel="noopener">Co-founder, ESG Clearing House</a></li></ul>
+      </section>
+      <section aria-labelledby="h-lang">
+        <h2 id="h-lang">Languages</h2>
+        <dl><dt>French</dt><dd>native</dd><dt>English</dt><dd>fluent</dd><dt>Portuguese</dt><dd>intermediate</dd><dt>Spanish</dt><dd>intermediate</dd></dl>
+      </section>
+    </div>
+  </div>
+</main>
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById("themeBtn"), key="jg-cv-theme", t="light";
+  try{ var s=localStorage.getItem(key); if(s==="dark"||s==="light") t=s; }catch(err){}
+  function apply(v){ root.setAttribute("data-theme",v); btn.setAttribute("aria-pressed", v==="dark"?"true":"false"); btn.textContent = v==="dark"?"Light mode":"Dark mode"; }
+  apply(t);
+  btn.addEventListener("click",function(){ var v=root.getAttribute("data-theme")==="dark"?"light":"dark"; apply(v); try{localStorage.setItem(key,v);}catch(err){} });
+})();
+</script>
+</body>
+</html>
